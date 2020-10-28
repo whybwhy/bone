@@ -10,17 +10,37 @@
 - LogBack 1.2.3 (Log)
 - MockMvc (Web Test)
 - HikariCP 3.4.5 (DB connection pool)
+- mysql 8.0
 
 -------
+HOST : http://localhost:8080
 
-| 기능 | httpMethod |  uri |
-|---|:---:|---:|---:|
-| C | POST | /v1/board/create |
-| R | GET | /v1/board/read |
-| R | GET | /v1/board/read/{id} |
-| U | PUT / POST | /v1/board/update |
-| D | DELETE / POST | /v1/board/delete |
+<pre>
+<table>
+<tr><td>기능</td><td>httpMethod</td><td>uri</td></tr>
+<tr><td>C</td><td>POST</td><td>/v1/board/create</td></tr>
+<tr><td>R</td><td>GET</td><td>/v1/board/read</td></tr>
+<tr><td>R</td>GET<td></td><td>/v1/board/read/{id}</td></tr>
+<tr><td>U</td><td>PUT / POST</td><td>/v1/board/update</td></tr>
+<tr><td>D</td><td>DELETE / POST</td><td>/v1/board/delete</td></tr>
+</table>
+</pre>
  
+
+-------
+DDL
+
+use bone
+CREATE TABLE `board` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `contents` varchar(100) NOT NULL,
+  `create_timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `name` varchar(50) NOT NULL,
+  `title` varchar(10) NOT NULL,
+  `update_timestamp` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
 
 -------
 
