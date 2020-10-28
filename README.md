@@ -20,7 +20,7 @@ HOST : http://localhost:8080
 <tr><td>기능</td><td>httpMethod</td><td>uri</td></tr>
 <tr><td>C</td><td>POST</td><td>/v1/board/create</td></tr>
 <tr><td>R</td><td>GET</td><td>/v1/board/read</td></tr>
-<tr><td>R</td>GET<td></td><td>/v1/board/read/{id}</td></tr>
+<tr><td>R</td><td>GET</td><td>/v1/board/read/{id}</td></tr>
 <tr><td>U</td><td>PUT / POST</td><td>/v1/board/update</td></tr>
 <tr><td>D</td><td>DELETE / POST</td><td>/v1/board/delete</td></tr>
 </table>
