@@ -30,6 +30,7 @@ HOST : http://localhost:8080
 -------
 DDL
 
+<pre>
 use bone
 CREATE TABLE `board` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -40,7 +41,7 @@ CREATE TABLE `board` (
   `update_timestamp` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
-
+</pre>
 
 -------
 
