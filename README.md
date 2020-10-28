@@ -13,6 +13,17 @@
 
 -------
 
+| 기능 | httpMethod |  uri |
+|---|:---:|---:|---:|
+| C | POST | /v1/board/create |
+| R | GET | /v1/board/read |
+| R | GET | /v1/board/read/{id} |
+| U | PUT / POST | /v1/board/update |
+| D | DELETE / POST | /v1/board/delete |
+ 
+
+-------
+
 #### Controller 샘플
 <pre>
 BoardController.java
@@ -48,6 +59,7 @@ BoardService.java
     }
 </pre>
 
+-------
 
 #### Repository 샘플
 <pre>
@@ -60,6 +72,7 @@ public interface BoardRepository extends JpaRepository<Board, Long> {
 
 </pre>
 
+-------
 
 #### Test
 BoardControllerTest.java 샘플
