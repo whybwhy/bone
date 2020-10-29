@@ -1594,3 +1594,4 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2020-10-29 08:12:38.814  INFO 15519 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-10-29 08:12:38.818  INFO 15519 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-10-29 08:12:38.861  INFO 15519 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 42 ms
+2020-10-29 10:39:11.397  WARN 15519 --- [pool-bone housekeeper] com.zaxxer.hikari.pool.HikariPool        : pool-bone - Thread starvation or clock leap detected (housekeeper delta=1h47m59s489ms).
